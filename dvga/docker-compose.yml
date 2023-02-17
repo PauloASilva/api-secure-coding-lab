@@ -1,0 +1,9 @@
+version: '3'
+services:
+  dvga:
+    image: dolevf/dvga
+    environment:
+      - WEB_HOST=0.0.0.0
+    ports:
+      - "5013:5013"
+    restart: on-failure

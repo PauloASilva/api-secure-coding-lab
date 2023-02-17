@@ -1,0 +1,8 @@
+version: '3'
+services:
+  petstore:
+    build: .
+    image: petstore
+    ports:
+      - "3333:3333"
+    restart: on-failure
